@@ -248,3 +248,57 @@ OK
 
 ### example 
 <img src="hashes.png">
+
+### examples 
+
+```
+127.0.0.1:6379> HMSET student  name ashutoshh age 29 lname singh tech devops 
+OK
+
+127.0.0.1:6379> keys * 
+1) "student"
+
+
+127.0.0.1:6379> HGET student  name 
+"ashutoshh"
+
+
+127.0.0.1:6379> HMGET student  name lname
+1) "ashutoshh"
+2) "singh
+
+127.0.0.1:6379> HGETALL student 
+1) "name"
+2) "ashutoshh"
+3) "age"
+4) "29"
+5) "lname"
+6) "singh"
+7) "tech"
+8) "devops"
+
+
+
+127.0.0.1:6379> hsetnx  student name delvex
+(integer) 0
+
+
+---
+127.0.0.1:6379> hkeys student
+1) "name"
+2) "age"
+3) "lname"
+4) "tech"
+
+```
+
+### some more commands
+
+```
+127.0.0.1:6379> HVALS student 
+1) "ashutoshh"
+2) "29"
+3) "singh"
+4) "devops"
+
+```
