@@ -302,3 +302,24 @@ OK
 4) "devops"
 
 ```
+
+# Redis-cli Monitor 
+
+## this is to monitor all the command by redis-client 
+
+```
+[ec2-user@ip-172-31-56-237 ~]$ redis-cli  monitor
+OK
+1598383186.051067 [0 127.0.0.1:33360] "COMMAND"
+1598383190.838296 [0 127.0.0.1:33360] "keys" "*"
+1598383203.383775 [0 127.0.0.1:33360] "info" "server"
+
+
+```
+
+# List 
+
+## sorted by their insertion order 
+
+<img src="">
+
