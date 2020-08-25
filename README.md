@@ -243,4 +243,8 @@ OK
 
 # working with Hashes 
 
-## 
+## Hash is better way of storing data in field : value pair 
+## can store upto 4 Billion pair
+
+### example 
+<img src="hashes.png">
