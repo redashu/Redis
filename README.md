@@ -321,5 +321,5 @@ OK
 
 ## sorted by their insertion order 
 
-<img src="">
+<img src="list.png">
 
