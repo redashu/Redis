@@ -323,3 +323,76 @@ OK
 
 <img src="list.png">
 
+## list implementation 
+
+```
+127.0.0.1:6379> LPUSH l1 1 2 3 4 5 8 
+(integer) 6
+127.0.0.1:6379> keys * 
+1) "l1"
+2) "studnet"
+3) "student"
+
+127.0.0.1:6379> LRANGE l1 1 200
+1) "5"
+2) "4"
+3) "3"
+4) "2"
+5) "1"
+
+
+```
+
+## pushing range 
+
+```
+127.0.0.1:6379> LPUSH l1 100
+(integer) 7
+127.0.0.1:6379> LRANGE l1 1 20
+1) "8"
+2) "5"
+3) "4"
+4) "3"
+5) "2"
+6) "1"
+
+```
+
+# SETS 
+
+```
+
+127.0.0.1:6379> SADD myset 1 2 3 4 5
+(integer) 5
+127.0.0.1:6379> SMEMBERS myset
+1) "1"
+2) "2"
+3) "3"
+4) "4"
+5) "5"
+127.0.0.1:6379> SADD myset 3
+(integer) 0
+127.0.0.1:6379> SADD myset 10
+(integer) 1
+127.0.0.1:6379> SADD myset 8
+(integer) 1
+127.0.0.1:6379> 
+127.0.0.1:6379> SMEMBERS myset 
+1) "1"
+2) "2"
+3) "3"
+4) "4"
+5) "5"
+6) "8"
+7) "10"
+127.0.0.1:6379> SCARD myset
+(integer) 7
+
+```
+
+## difference in set
+
+```
+
+
+
