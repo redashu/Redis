@@ -22,5 +22,23 @@
 
 # Session store in Redis
 
+## Its for higly engage experience and data life cycle is bit different 
+
 <img src="session.png">
+
+## How we design session 
+
+<img src="sessiondesign.png">
+
+# Metering in Redis
+
+<img src="metering.png">
+
+# Redis as fast data ingest
+
+<img src="ingest.png">
+
+## example
+
+<img src="ingestexp.png">
 
