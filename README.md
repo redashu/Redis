@@ -1,35 +1,26 @@
-# Redis 6.x installaion on rhel 7.5 
+# Redis use cases 
 
-## update yum repo 
+## There are number of use cases of Redis listed below
 
-```
- yum update
+<img src="usecases.png">
 
-```
+## Redis as cache 
 
-## install epel 
+<img src="cache.png">
 
-```
- yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-```
+## Design cache 
 
-## install remo repo
+<img src="designcache.png">
 
-```
-yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+## SQl like query
 
-```
+<img src="query1.png">
 
-## install redis 
+<img src="query2.png">
 
-```
-yum --enablerepo=remi install redis
 
-```
 
-## starting redis 
+# Session store in Redis
 
-```
- systemctl enable --now  redis 
+<img src="session.png">
 
-```
